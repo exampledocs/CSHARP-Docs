@@ -342,15 +342,15 @@ else
 ## New Location Protection Check
 
 ```cs
-SkyAuthApp.newloginfactor(username.Text);
+SkyAuthApp.newloginfactor(username.Text); // Protected by the System
 ```
 
 ## New Location Protection Add Active ~ False
 
 ```cs
-SkyAuthApp.newloginfactoractive(SkyAuthApp.user_data.username,"true"); //TRUE
+SkyAuthApp.newloginfactoractive(SkyAuthApp.user_data.username,"true"); // True
 
-SkyAuthApp.newloginfactoractive(SkyAuthApp.user_data.username,"false"); //FALSE
+SkyAuthApp.newloginfactoractive(SkyAuthApp.user_data.username,"false"); // False
 ```
 
 ## Chat channels
