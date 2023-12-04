@@ -5,6 +5,8 @@ SkyAuth C# example for the https://skyproject.cc authentication system.
 
 If the default example not added to your software isn't functioning how it should, please report a bug here https://skyproject.cc/app/?page=support
 
+However, we do **NOT** provide support for adding SkyAuth to your project. If you can't figure this out you should use Google or YouTube to learn more about the programming language you want to sell a program in.
+
 ## `SkyAuthApp` instance definition
 
 Visit https://skyproject.cc/app/ and select your application, then click on the **C#** tab
@@ -335,6 +337,20 @@ if (!SkyAuthApp.response.success)
 }
 else
     File.WriteAllBytes(Directory.GetCurrentDirectory() + "\\test.txt", result);
+```
+
+## New Location Protection Check
+
+```cs
+SkyAuthApp.newloginfactor(username.Text);
+```
+
+## New Location Protection Add Active ~ False
+
+```cs
+SkyAuthApp.newloginfactoractive(SkyAuthApp.user_data.username,"true"); //TRUE
+
+SkyAuthApp.newloginfactoractive(SkyAuthApp.user_data.username,"false"); //FALSE
 ```
 
 ## Chat channels
